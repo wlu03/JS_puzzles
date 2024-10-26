@@ -90,7 +90,7 @@ public class June2024 {
             }
 
             // Terminate if Min Score is Achieved
-            if (fitnessMap.get(population.get(0)) >= 200000000) break;
+            if (fitnessMap.get(population.get(0)) >= 250000000) break;
 
             // Create New Population
             List<char[][]> newPopulation = new ArrayList<>();
