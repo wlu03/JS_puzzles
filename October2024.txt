@@ -1,0 +1,24 @@
+21,2,23,a6,b4,c6,d4,f5,e3,f1,a1,b3,c5,d3,f4,d5,f6
+
+
+This is my solution for October. My approach was simple.
+My initial thoughts when solving the problem was: if I had two similar
+paths on the red and blue path, then solving for the equation would be simple.
+Additionally, the more multiplication that is required to each another path
+makes the variables A, B, and C smaller. Without coding, I found a path that works for
+both red and blue which was A-A-B-B-C-C-C. Therefore, the equation that adds up to 2024
+would look like (((2A*B)+B)*C+2C)=2024. Breaking down 2024 into it's prime factorization
+was: 23 * 11 * 2 * 2 * 2. The following below is how I found values for A, B, C:
+
+ 2ABC+BC+2C = 2024
+ C(2AB+B+2) = 2024  // To minimize the values, C must be 23
+ 23(2AB+B+2) = 2024 // This means that 2A+B+2=(11*2^3)
+
+ 2AB+B+2 = 88
+ 2AB+B = 86
+ B(2A+1) = 86, (A,B=21,2) is the only combination where A+B+C<50
+
+One potential solution that can better this solution is such that I find a longer symmetric
+path and solve for that equation to get a better value of A, B, and C. However, for now,
+this is the my solution where A+B+C=45. 
+ 
